@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sigstore-operator-bundle
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/sigstore-operator-bundle@sha256:344899526feec80942785f6a71914ab47b13fc9fd7ba0f0a58f0bffe42f13ba9
+        name: container-image
+        resources: {}
+status: {}
