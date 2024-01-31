@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: operator-bundle-1-0-gamma
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: operator-bundle-1-0-gamma
+    app.kubernetes.io/part-of: operator-1-0-gamma
+  name: operator-bundle-1-0-gammadtqt
+spec:
+  port:
+    targetPort: 1
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: operator-bundle-1-0-gamma
+    weight: 100
+status: {}
