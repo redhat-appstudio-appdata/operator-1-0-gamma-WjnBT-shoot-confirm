@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: sigstore-operator-bundle-fbc-ocp-4-13
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/sigstore-operator-bundle-fbc-ocp-4-13@sha256:baca5c3ae4038f2f9e8702b472bda5d58d801e3dca20d42f247d3412e61a7fd4
+        name: container-image
+        resources: {}
+status: {}
