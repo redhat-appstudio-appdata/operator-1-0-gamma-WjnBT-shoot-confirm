@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:f3a03f18d9d7b6a57176fee7c24028ceae2154e8ddc14561bb67956a42348f42
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:8c65bc4df368f83c2996ad84383231f6567e8935668f96fc222496b8ca38c487
         name: container-image
         resources: {}
 status: {}
