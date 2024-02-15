@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: operator-1-0-gamma
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:35923b98eced8c860894825c812f75a868e2913cf64e118068a5607852179c86
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:0be4554db9250ad5467b9cbbf5c912a63817caa920fe2192b0846020746c0515
         imagePullPolicy: Always
         name: container-image
         resources:
