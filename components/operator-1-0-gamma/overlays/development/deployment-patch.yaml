@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: operator-1-0-gamma
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -11,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:ccafd0c06e651514e45521221c1940c6c55d491c73b5c2087eb374ee1a565a8a
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/operator-1-0-gamma/operator-1-0-gamma@sha256:315fc59dc510796dbac517f314ebd1a960054fc6bbfccbb53c03c9f24d49b048
         name: container-image
         resources: {}
 status: {}
